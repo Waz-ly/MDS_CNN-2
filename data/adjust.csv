@@ -1,0 +1,2 @@
+MAE_mean,MAE_var,MAE_n,triplet_mean,triplet_var,triplet_n,NDCG_mean,NDCG_var,NDCG_n
+0.1748,0.0017,13150,0.6824,0.0164,1670,0.8957,0.0031,1670

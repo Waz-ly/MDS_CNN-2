@@ -1,0 +1,10 @@
+{
+  "params": {
+    "lr": 1.35644679300597e-05,
+    "weight_decay": 0.011307410517333477,
+    "n_hidden": 2,
+    "n_epochs": 1200,
+    "hidden_dim": 512
+  },
+  "search_score": 0.20033513109169887
+}
