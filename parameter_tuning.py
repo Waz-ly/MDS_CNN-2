@@ -76,7 +76,8 @@ if __name__ == "__main__":
 
     # 10 of 21 folds for validation
 
-    for i in [32, 64, 128, 256]:
+    for i in [256]:
 
         result = optimize(n_trials=50, n_folds=10, out_dim=i)
         save_result(result, f"data/tuning_{i}D.json")
+        

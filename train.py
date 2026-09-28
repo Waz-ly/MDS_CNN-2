@@ -130,12 +130,12 @@ if __name__ == "__main__":
 
     aug_mesh = augment.get_augment_meshgrid(augment.BEST_VARIANTS)
 
-    for i in [2, 4, 8]:
+    for i in [32]:
 
         with open(f"data/tuning_{i}D.json", "r") as f:
             model_params = json.load(f)["params"]
 
-        results = trial(n_datasets=None, augment_data=True, augment_mesh=aug_mesh, adjust_target=True, trials=1, **model_params)
+        results = trial(n_datasets=None, augment_data=True, augment_mesh=aug_mesh, adjust_target=True, trials=1, out_dim=i, **model_params)
         save_results(results, f"opt_{i}D")
 
     raise Exception("stop")
